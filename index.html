@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electronic Simon Game</title>
+  <link rel="stylesheet" href="simon.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.0-beta13/howler.min.js"></script>
+  <script src="simon.js"></script>
+</head>
+<body>
+  <div>
+    <button class = "selectedB divider inline" id = "basic" onclick = "mode('bas')">Basic</button>
+    <button class = "styleB divider inline" id = "advanced" onclick = "mode('adv')">Roguelike</button>
+    <button class = "styleB divider inline resetAll" id = "reset" onclick = "reset()">Reset</button>
+  </div>
+  <p>Counter:</p><p id = "tally"></p>
+  <div class = "center">
+  <div>
+    <button class = "green" id = "greenB" onclick = "nextPick('greenB')"></button><button class = "red" id = "redB" onclick = "nextPick('redB')"></button>
+  </div>
+  <div>
+    <button class = "yellow" id = "yellowB" onclick = "nextPick('yellowB')"></button><button class = "blue" id = "blueB" onclick = "nextPick('blueB')"></button>
+  </div>
+  </div>
+</body>
+</html>
